@@ -1,43 +1,129 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #F5F5F5;
+    font-family: Roboto;
+}
+
+p
+{
+    color: grey;
+}
+
+img
+{
+    max-width: 100%;
 }
 
 nav
 {
+    background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > *
+{
+    padding: 1rem;
+}
+
+nav div
+{
+    display: flex;
+}
+
+nav ul
+{
+    display: none;
+}
+
+#menu-icon
+{
+    font-size: 2rem;
     font-weight: 300;
-    font-size: 1.2em;
-    justify-content: center;
-    box-shadow: 0px 0.1px 2px grey;
-    margin-bottom: 2em;
-}
-
-nav a 
-{
     color: grey;
-    text-decoration: none;
-    padding: 1em;
-    display: inline-block;
-    border: 2px solid transparent;
+    padding: 1rem 1.5rem;
 }
 
-nav a:hover
+#hero
 {
-    border-bottom: 2px solid lightcoral;
-    transition-duration: 0.5s;
+    background-color: white;
+    box-shadow: 0px 5px 5px -5px grey;
 }
 
-nav ul li
+#hero div
 {
-    text-decoration: none;
-    display: inline-block;
+    padding: 2rem;
 }
 
-#content
+#hero div div
 {
     display: flex;
-    justify-content: center;
+    padding: 0;
+    padding-top: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#hero div img 
+{
+    height: 2rem;
+    border-radius: 100%;
+}
+
+#recent
+{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+#recent-head
+{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 1.2rem;
+}
+
+#recent-articles
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#recent-articles > * 
+{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#recent-articles div div
+{
+    flex: 1;
+}
+
+#recent-articles div div > *
+{
+    padding-bottom: 0.5rem;
+}
+
+.row
+{
+    display: flex;
+}
+
+.row-between
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
 }
